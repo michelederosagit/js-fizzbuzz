@@ -23,16 +23,16 @@
 // Scrivo programma che stampa i numeri da 1 a 100
 for (var i = 1; i <=100; i++){
     if (i % 3 == 0 && i % 5 == 0){
+        document.getElementById("mio_id").innerHTML +=  '<li class="red">' +  'FrizzBuzz' + '</li>';
         console.log("FrizzBuzz");
-        document.getElementById("mio_id").innerHTML +=  "<li>" +  "FrizzBuzz" + "</li>";
     } else if (i % 3 == 0){
-        document.getElementById("mio_id").innerHTML +=  "<li>" +  "Frizz" + "</li>";
+        document.getElementById("mio_id").innerHTML +=  '<li class="green">' +  'Frizz' + '</li>';
         console.log("Frizz");
     } else if (i % 5 == 0){
-        document.getElementById("mio_id").innerHTML +=  "<li>" +  "Buzz" + "</li>";
+        document.getElementById("mio_id").innerHTML +=  '<li class="blue">' +  'Buzz' + '</li>';
         console.log("Buzz");
     } else {
         console.log(i);
-        document.getElementById("mio_id").innerHTML += "<li>" + i + "</li>";
+        document.getElementById("mio_id").innerHTML += '<li>' + i + '</li>';
       }
 }
